@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Santhosh Kuamr">
+        <meta name="Description" content="Food Shop">
+        <link rel="icon" href="https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg">
+        <title>Foodies World</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <section id = "navigationBar">
+                <hr>
+                <img src="https://www.eatingwell.com/thmb/m5xUzIOmhWSoXZnY-oZcO9SdArQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/article_291139_the-top-10-healthiest-foods-for-kids_-02-4b745e57928c4786a61b47d8ba920058.jpg" alt="" height = "40" width="100">
+                <h1>Foodies World</h1>
+                <br><br>
+                <a href="htmlProject.html">Home</a>
+                &nbsp;&nbsp;
+                <a href="#foodList">Food List</a>
+                &nbsp;&nbsp;
+                <a href="#foodPrice">Food Price</a>
+                &nbsp;&nbsp;
+                <a href="#order">Order</a>
+                &nbsp;&nbsp;
+                <a href="#aboutUs">About Us</a>
+                <hr>
+            </section>
+        </header>
+        <main>
+            <section id = "foodPictures">
+                <figure>
+                    <img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/05/Probiotic-foods-bab5487.jpg?quality=90&resize=440,400" alt="Food logo" height="400" loading="lazy">
+                </figure>
+            </section>
+            <br>
+            <section id = "foodList">
+                <h2>Food List</h2>
+                <ul>
+                    <li>Parotta</li>
+                    <li>Chicken Briyani</li>
+                    <li>Mutton Briyani</li>
+                    <li>Fish Fry</li>
+                    <li>Dosa</li>
+                </ul>
+            </section>
+            <br>
+            <section id = "foodPrice">
+                <h2>Food price</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Food</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Parotta</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Briyani</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Mutton briyani</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Fish Fry</td>
+                            <td rowspan="2">25</td>
+                        </tr>
+                        <tr>
+                            <td>Dosa</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </section>
+            <br>
+            <section id = "order">
+                <h2>Order</h2>
+                <form action="index.html" method = "post">
+                    <fieldset>
+                        <legend>Order Your Food</legend>
+                        <label for="customerName">Customer Name</label>
+                        <input type="text" name="customerName" id="customerName" autocomplete="on" required placeholder="your name">
+                        <br><br>
+                        <label for="customerAddress">Customer Address</label>
+                        <input type = "text" name="customerAddress" id="customerAddress" autocomplete="on" required placeholder="your address">
+                        <br><br>
+                        <label for="phone">Phone Number</label>
+                        <input type = "tel" name="phone" id="phone" required placeholder="phone" pattern="[0-9]{10}">
+                        <br><br>
+                        <label for="yourOrder">Your Order</label>
+                        <br>
+                        <input type="checkbox" name="parotta" id="parotta">
+                        <label for="parotta">Parotta</label>
+                        <br>
+                        <input type="checkbox" name="chickenBriyani" id="chickenBriyani">
+                        <label for="chickenBriyani">Chicken Briyani</label>
+                        <br>
+                        <input type="checkbox" name="muttonBriyani" id="muttonBriyani">
+                        <label for="muttonBriyani">Mutton Briyani</label>
+                        <br>
+                        <input type="checkbox" name="fishFry" id="fishFry">
+                        <label for="fishFry">Fish Fry</label>
+                        <br>
+                        <input type="checkbox" name="dosa" id="dosa">
+                        <label for="dosa">Dosa</label>
+                        <br><br>
+                        <label for="paymentType">Payment Type</label>
+                        <br>
+                        <input type="radio" name="paymentType" id="card" value = "Cash">
+                        <label for="cash">Cash</label>
+                        <br>
+                        <input type="radio" name="paymentType" id="card" value = "Card">
+                        <label for="card">Card</label>
+                        <br><br>
+                        <button type="submit">Submit</button>
+                        &nbsp;
+                        <button type="reset">Reset</button>
+                        
+                    </fieldset>
+                </form>
+            </section>
+            <br>
+            <section id ="aboutUs">
+                <h2>About Us</h2>
+                <aside>
+                    <details>
+                    <summary>Foodies World</summary>
+                    <h4>Shop Name : Foodies World <br>
+                    Owner : Santhosh Kumar <br>
+                    <address>Address : 1/1,East Street,
+                        Anna Nagar,
+                        Rayapuram,
+                        Chennai. 
+                    </address></h4>
+                    </details>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <h3>&copy;&nbsp;All Rights Are Reserved By Santhosh Kumar</h3>
+            <hr>
+        </footer>
+    </body>
+</html>
